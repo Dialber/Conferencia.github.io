@@ -1,0 +1,68 @@
+@import "../utilities/variables";
+body{
+   /*  background-image: linear-gradient(to top left, transparent 30%,#6a8de2 30%) ,
+    linear-gradient(16.6deg,transparent 30%,$backgroud-body 30% ) ;
+     */
+     //@warn: orangered;
+      position: relative;
+      overflow-x: hidden;
+      &::before{
+      content: "";     
+      position: absolute;     
+      background: $backgroud-body;  
+      border-radius: .5rem;  
+      width: 150%;
+      height: 70%;
+      top: -30%;
+      left: -10%;
+      transform: rotate(-157deg);
+      z-index: -1;
+   }
+  
+}
+
+@media (min-width:36rem){//hasta 768
+   body{
+      &::before{
+        left:-40%;
+        top:-15%
+      }
+   }
+   
+}
+
+@media (min-width:48rem){//hasta 992
+   body{
+      &::before{         
+         left: -45%;
+         top:-22%;
+      }
+   }
+   
+}
+
+@media (min-width:62rem){//hasta 1200
+   body{
+      &::before{
+         width: 185%;
+         left: -85%;
+         top:-20%;
+         transform: rotate(-166deg);
+      }
+   }
+   
+}
+
+@media (min-width:75rem){
+   body{
+      &::before{
+         width: 230%;
+         height: 80%;
+         left: -130%;
+         top:-25%;
+         
+      }
+   }
+   
+}
+ 

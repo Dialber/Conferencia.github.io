@@ -1,0 +1,109 @@
+.septionGuests{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 1.5rem;
+}
+.septionGuests__span{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.septionGuests__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+}
+.septionGuests__article1{
+    background-color: white;
+    color: #5d73d6;
+    width: 90%;
+    border-radius: .4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 .1rem .5rem black;
+    >*{
+        margin-bottom: 1rem;
+    }
+    img{
+        width: 60%;
+    }
+    h4{
+        font-size: 1.5rem;
+        width: 85%;
+    }
+    span{
+        background-color: #5d73d6;
+        text-transform: uppercase;
+        color: white;
+        padding: .2rem .6rem;
+        align-self: flex-start;
+        margin-top: .5rem;
+        margin-left: .5rem;
+        border-radius: .2rem;
+    }
+    p{
+        width: 60%;
+    }
+}
+.septionGuests__article1--2{
+    @extend .septionGuests__article1; 
+}
+.septionGuests__article1--3{
+    @extend .septionGuests__article1;
+}
+
+
+@media (min-width:36rem){
+    .septionGuests__container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: center;
+    }
+    .septionGuests__article1{
+        width: 45%;
+        >*{
+            margin-bottom: 1.2rem;
+        }
+    }
+    
+}
+@media (min-width:48rem){
+    .septionGuests__article1{
+        width: 31%;
+        >*{
+            margin-bottom: 1.4rem;
+        }
+    }
+   
+}
+@media (min-width:62rem){
+    .septionGuests__article1{
+        width: 31%;
+        >*{
+            margin-bottom: 1.6rem;
+        }
+    }
+    .septionGuests{
+        width:80%;
+    }
+}
+@media (min-width:75rem){
+    .septionGuests__article1{
+        width: 31%;
+        >*{
+            margin-bottom: 1.8rem;
+        }
+    }
+    
+}
