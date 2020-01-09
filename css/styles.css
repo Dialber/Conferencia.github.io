@@ -422,6 +422,27 @@ body {
     left: -130%;
     top: -25%; } }
 
+@media (min-width: 86rem) {
+  body::before {
+    width: 230%;
+    height: 90%;
+    left: -130%;
+    top: -40%; } }
+
+@media (min-width: 125rem) {
+  body::before {
+    width: 230%;
+    height: 90%;
+    left: -130%;
+    top: -50%; } }
+
+@media (min-width: 187rem) {
+  body::before {
+    width: 230%;
+    height: 90%;
+    left: -130%;
+    top: -60%; } }
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -584,7 +605,7 @@ body {
   .septionGuests__article1 > *, .septionGuests__article1--2 > *, .septionGuests__article1--3 > * {
     margin-bottom: 1rem; }
   .septionGuests__article1 img, .septionGuests__article1--2 img, .septionGuests__article1--3 img {
-    width: 60%; }
+    width: 45%; }
   .septionGuests__article1 h4, .septionGuests__article1--2 h4, .septionGuests__article1--3 h4 {
     font-size: 1.5rem;
     width: 85%; }
@@ -615,6 +636,8 @@ body {
     align-content: center; }
   .septionGuests__article1, .septionGuests__article1--2, .septionGuests__article1--3 {
     width: 45%; }
+    .septionGuests__article1 img, .septionGuests__article1--2 img, .septionGuests__article1--3 img {
+      width: 60%; }
     .septionGuests__article1 > *, .septionGuests__article1--2 > *, .septionGuests__article1--3 > * {
       margin-bottom: 1.2rem; } }
 
@@ -657,7 +680,7 @@ body {
   color: #5d73d6;
   text-transform: uppercase; }
 
-.aside__container {
+.aside__ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -672,14 +695,15 @@ body {
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  margin-bottom: 2rem; }
-  .aside__container > * {
+  margin-bottom: 2rem;
+  text-align: left; }
+  .aside__ul > * {
     margin-bottom: 1rem;
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1; }
 
-.aside__information, .aside__information--2, .aside__information--3 {
+.aside__li, .aside__li--2, .aside__li--3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -693,31 +717,39 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
-  .aside__information div, .aside__information--2 div, .aside__information--3 div {
+  .aside__li::before, .aside__li--2::before, .aside__li--3::before {
+    content: "";
     margin-right: 1rem;
-    background: url("../images/sprite/sprite.png") 0 -1px/100% no-repeat;
-    width: 2rem;
-    height: 2rem; }
-  .aside__information p, .aside__information--2 p, .aside__information--3 p {
-    border-left: .1rem solid #5d73d6;
-    padding-left: 1rem; }
+    background: url("../images/sprite/sprite-32px.png") 0 0/100% no-repeat;
+    width: 32px;
+    height: 32px; }
 
 .aside__visitUrl {
   padding-left: .5rem; }
 
-.aside__information--2 div {
-  background: url("../images/sprite/sprite.png") 0 -34px/100% no-repeat; }
+.aside__li--2::before {
+  background-position: 0 -33px; }
 
-.aside__information--3 div {
-  background: url("../images/sprite/sprite.png") 0 -67px/100% no-repeat; }
+.aside__li--3::before {
+  background-position: 0 -66px; }
 
 @media (min-width: 36rem) {
-  .aside__container {
+  .aside__ul {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
     width: 90%; } }
+
+@media (min-width: 86rem) {
+  .aside__li::before, .aside__li--2::before, .aside__li--3::before {
+    background: url("../images/sprite/sprite-48px.png") 0 0/100% no-repeat;
+    width: 48px;
+    height: 48px; }
+  .aside__li--2::before {
+    background-position: 0 -49px; }
+  .aside__li--3::before {
+    background-position: 0 -98px; } }
 
 .footer {
   width: 100%;
@@ -775,8 +807,8 @@ body {
   .footer__li::before, .footer__li--2::before, .footer__li--3::before, .footer__li--4::before {
     content: "";
     display: inline-block;
-    width: 2rem;
-    height: 2rem;
+    width: 32px;
+    height: 32px;
     margin-right: .5rem;
     background: url("../images/sprite/icons-32px.png");
     background-position: 0 0; }
@@ -826,5 +858,18 @@ body {
 @media (min-width: 62rem) {
   .footer__container {
     width: 80%; } }
+
+@media (min-width: 86rem) {
+  .footer__li::before, .footer__li--2::before, .footer__li--3::before, .footer__li--4::before {
+    width: 48px;
+    height: 48px;
+    background: url("../images/sprite/icons-48px.png");
+    background-position: 0 0; }
+  .footer__li--2::before {
+    background-position: 0 -49px; }
+  .footer__li--3::before {
+    background-position: 0 -98px; }
+  .footer__li--4::before {
+    background-position: 0 -147px; } }
 
 /*# sourceMappingURL=styles.css.map */

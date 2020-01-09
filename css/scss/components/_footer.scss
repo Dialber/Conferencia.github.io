@@ -33,8 +33,8 @@
     &::before{
         content: "";
         display: inline-block;
-        width: 2rem;
-        height: 2rem;
+        width: 32px;
+        height: 32px;
         margin-right: .5rem;
         background: url("../images/sprite/icons-32px.png");
         background-position: 0 0;
@@ -92,9 +92,34 @@
 @media (min-width:62rem){
     .footer__container{
         width: 80%;
-    }
+    }    
    
 }
-@media (min-width:75rem){
+@media (min-width:86rem){
+    .footer__li{
+        &::before{            
+            width: 48px;
+            height: 48px;           
+            background: url("../images/sprite/icons-48px.png");
+            background-position: 0 0;
+        }
+    }
+    .footer__li--2{
+        &::before{                
+           
+            background-position: 0 -49px;
+        }
+    }
+    .footer__li--3{
+        &::before{                
+           
+            background-position: 0 -98px;
+        }
+    }
+    .footer__li--4{
+        &::before{                           
+            background-position: 0 -147px;
+        }
+    }
     
 }

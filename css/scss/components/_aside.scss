@@ -6,59 +6,79 @@
     align-items: center;
     width: 100%;    
     margin-bottom: 2rem;
-    color: #5d73d6;
+    color: $color-letters;
     text-transform: uppercase;
 }
-.aside__container{
+.aside__ul{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     margin-bottom: 2rem;
+    text-align: left;    
     >*{
         margin-bottom: 1rem;
         flex-grow: 1;
     }
 }
-.aside__information{
+.aside__li{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    div{
+    align-items: center;    
+    &::before{
+        content: "";
         margin-right: 1rem;
-        background: url("../images/sprite/sprite.png") 0 -1px / 100% no-repeat;
-        width: 2rem;
-        height: 2rem;
-    }
-    p{
-        //line-height: 1.5rem;
-        border-left: .1rem solid #5d73d6;
-        padding-left: 1rem;
-    }
+        background: url("../images/sprite/sprite-32px.png") 0 0 / 100% no-repeat;
+        width: 32px;
+        height: 32px;
+    }   
 
 }
 .aside__visitUrl{
     padding-left: .5rem;
 }
-.aside__information--2{
-    @extend .aside__information;
-    div{
-        background: url("../images/sprite/sprite.png") 0 -34px / 100% no-repeat;
-    }
+.aside__li--2{
+    @extend .aside__li;
+    &::before{
+        background-position: 0 -33px;
+    }   
 }
-.aside__information--3{
-    @extend .aside__information;
-    div{
-        background: url("../images/sprite/sprite.png") 0 -67px / 100% no-repeat;
-    }
+.aside__li--3{
+    @extend .aside__li;
+    &::before{
+        background-position: 0 -66px;
+    } 
 }
 
 
 @media (min-width:36rem){
-    .aside__container{
+    .aside__ul{
         flex-direction: row;
         width: 90%;
     }
+}
+@media (min-width:86rem){
+    .aside__li{       
+        &::before{            
+            background: url("../images/sprite/sprite-48px.png") 0 0 / 100% no-repeat;
+            width: 48px;
+            height: 48px;
+        }   
+    
+    }
+    .aside__li--2{
+       
+        &::before{
+            background-position: 0 -49px;
+        }   
+    }
+    .aside__li--3{
+       
+        &::before{
+            background-position: 0 -98px;
+        } 
+    }
+
 }

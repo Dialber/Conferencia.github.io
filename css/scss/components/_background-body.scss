@@ -65,4 +65,37 @@ body{
    }
    
 }
+@media (min-width:86rem){
+   body{
+      &::before{
+         width: 230%;
+         height: 90%;
+         left: -130%;
+         top:-40%;
+         
+      }
+   }  
+}
+@media (min-width:125rem){
+   body{
+      &::before{
+         width: 230%;
+         height: 90%;
+         left: -130%;
+         top:-50%;
+         
+      }
+   }  
+}
+@media (min-width:187rem){
+   body{
+      &::before{
+         width: 230%;
+         height: 90%;
+         left: -130%;
+         top:-60%;
+         
+      }
+   }  
+}
  

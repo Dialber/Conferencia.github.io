@@ -21,36 +21,30 @@ html(lang="en")
 			div(class="septionGuests__container")
 				article(class="septionGuests__article1")
 					span Lorem.
-					img(src="images/man.png", alt="", srcset="")
+					img(alt="guest man", srcset="images/man-small.png 200w, images/man.png 429w",sizes="(min-width=75rem) 8vw, 100vw",src="images/man.png")
 					h4 Lorem, ipsum dolor.
 					p Lorem ipsum dolor sit amet consectetur.
 				article(class="septionGuests__article1--2")
 					span Lorem.
-					img(src="images/woman.png", alt="", srcset="")
+					img(srcset="images/woman-small.png 200w, images/woman.png 429w",sizes="(min-width=75rem) 8vw, (min-width=75rem) 100vw", alt="", src="images/woman.png")
 					h4 Lorem, ipsum dolor.
 					p Lorem ipsum dolor sit amet consectetur.
 				article(class="septionGuests__article1--3")
 					span Lorem.
-					img(src="images/woman1.png", alt="", srcset="")
+					img(srcset="images/woman1-small.png 200w, images/woman1.png 429w",sizes="(min-width=75rem) 8vw, (min-width=75rem) 100vw", alt="", src="imges/woman-1.png")
 					h4 Lorem, ipsum dolor.
 					p Lorem ipsum dolor sit amet consectetur.
 		aside(class="aside")
-			article(class="aside__container")
-				div(class="aside__information")
-					div(class="")
-					p 17 / 18
-						br
-						| march 2020
-				div(class="aside__information--2")
-					div(class="")
-					p from 08 am
-						br
-						| to 05 pm
-				div(class="aside__information--3")
-					div(class="")
-					p 2478
-						br
-						| counts len      
+			ul(class="aside__ul")
+				li(class="aside__li") 17 / 18
+					br
+					| march 2020
+				li(class="aside__li--2") from 08 am
+					br
+					| to 05 pm
+				li(class="aside__li--3") 2478
+					br
+					| counts len					 
 			small 
 				b More info on:                
 				a(class="aside__visitUrl",href="www.yourwebsite.com") www.yourwebsite.com
