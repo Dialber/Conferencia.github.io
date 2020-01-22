@@ -33,11 +33,13 @@
      
 }
 .link{
+    transition: transform .2s ease-in-out;
     &:hover{
-        color:darken($color: $color-letters, $amount: 10%)
+        color:darken($color: $color-letters, $amount: 10%);
     }
     &:active{
-        color:darken($color: $color-letters, $amount: 40%)
+        color:darken($color: $color-letters, $amount: 40%);
+        transform:scale(0.9);      
     }
     &::before{
         font-size: 1.5rem;
@@ -45,10 +47,11 @@
         color: $color-letters;
     } 
     &:hover::before{
-        color:darken($color: $color-letters, $amount: 10%)
+        color:darken($color: $color-letters, $amount: 10%);
     }
     &:active::before{
-        color:darken($color: $color-letters, $amount: 40%)
+        color:darken($color: $color-letters, $amount: 40%);
+       
     }
 }
 

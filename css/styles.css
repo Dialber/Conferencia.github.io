@@ -805,22 +805,27 @@ body {
   -ms-flex-align: center;
   align-items: center; }
 
-.link:hover {
-  color: #3450cc; }
-
-.link:active {
-  color: #152052; }
-
-.link::before {
-  font-size: 1.5rem;
-  margin-right: .5rem;
-  color: #5d73d6; }
-
-.link:hover::before {
-  color: #3450cc; }
-
-.link:active::before {
-  color: #152052; }
+.link {
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+  transition: -webkit-transform .2s ease-in-out;
+  -o-transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out; }
+  .link:hover {
+    color: #3450cc; }
+  .link:active {
+    color: #152052;
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9); }
+  .link::before {
+    font-size: 1.5rem;
+    margin-right: .5rem;
+    color: #5d73d6; }
+  .link:hover::before {
+    color: #3450cc; }
+  .link:active::before {
+    color: #152052; }
 
 .footer__span {
   margin-bottom: 1rem; }
