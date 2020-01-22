@@ -795,7 +795,7 @@ body {
   flex-wrap: wrap;
   margin-bottom: 1rem; }
 
-.footer__li, .footer__li--2, .footer__li--3, .footer__li--4 {
+.footer__li {
   width: 50%;
   padding: .5rem 0;
   display: -webkit-box;
@@ -804,27 +804,23 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
-  .footer__li::before, .footer__li--2::before, .footer__li--3::before, .footer__li--4::before {
-    content: "";
-    display: inline-block;
-    width: 32px;
-    height: 32px;
-    margin-right: .5rem;
-    background: url("../images/sprite/icons-32px.png");
-    background-position: 0 0; }
-  .footer__li:hover, .footer__li--2:hover, .footer__li--3:hover, .footer__li--4:hover {
-    cursor: pointer;
-    -webkit-filter: brightness(60%);
-    filter: brightness(60%); }
 
-.footer__li--2::before {
-  background-position: 0 -33px; }
+.link:hover {
+  color: #3450cc; }
 
-.footer__li--3::before {
-  background-position: 0 -66px; }
+.link:active {
+  color: #152052; }
 
-.footer__li--4::before {
-  background-position: 0 -99px; }
+.link::before {
+  font-size: 1.5rem;
+  margin-right: .5rem;
+  color: #5d73d6; }
+
+.link:hover::before {
+  color: #3450cc; }
+
+.link:active::before {
+  color: #152052; }
 
 .footer__span {
   margin-bottom: 1rem; }
@@ -833,7 +829,7 @@ body {
   .footer__ul {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap; }
-  .footer__li, .footer__li--2, .footer__li--3, .footer__li--4 {
+  .footer__li {
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1; } }
@@ -853,23 +849,16 @@ body {
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    justify-self: baseline; } }
+    justify-self: baseline; }
+  .link::before {
+    font-size: 2rem;
+    margin-right: .6rem; } }
 
 @media (min-width: 62rem) {
   .footer__container {
-    width: 80%; } }
-
-@media (min-width: 86rem) {
-  .footer__li::before, .footer__li--2::before, .footer__li--3::before, .footer__li--4::before {
-    width: 48px;
-    height: 48px;
-    background: url("../images/sprite/icons-48px.png");
-    background-position: 0 0; }
-  .footer__li--2::before {
-    background-position: 0 -49px; }
-  .footer__li--3::before {
-    background-position: 0 -98px; }
-  .footer__li--4::before {
-    background-position: 0 -147px; } }
+    width: 80%; }
+  .link::before {
+    font-size: 2.5rem;
+    margin-right: .7rem; } }
 
 /*# sourceMappingURL=styles.css.map */

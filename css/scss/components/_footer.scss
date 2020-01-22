@@ -28,40 +28,30 @@
     width: 50%;
     padding: .5rem 0;
     display: flex; 
-    align-items: center;
+    align-items: center; 
     
-    &::before{
-        content: "";
-        display: inline-block;
-        width: 32px;
-        height: 32px;
-        margin-right: .5rem;
-        background: url("../images/sprite/icons-32px.png");
-        background-position: 0 0;
-    }
+     
+}
+.link{
     &:hover{
-        cursor:pointer;
-        filter: brightness(60%);        
+        color:darken($color: $color-letters, $amount: 10%)
+    }
+    &:active{
+        color:darken($color: $color-letters, $amount: 40%)
+    }
+    &::before{
+        font-size: 1.5rem;
+        margin-right: .5rem;
+        color: $color-letters;
+    } 
+    &:hover::before{
+        color:darken($color: $color-letters, $amount: 10%)
+    }
+    &:active::before{
+        color:darken($color: $color-letters, $amount: 40%)
     }
 }
-.footer__li--2{
-    @extend .footer__li;
-    &::before{
-        background-position: 0 -33px;
-    }    
-}
-.footer__li--3{
-    @extend .footer__li;
-    &::before{
-        background-position: 0 -66px;
-    } 
-}
-.footer__li--4{
-    @extend .footer__li;
-    &::before{
-        background-position: 0 -99px;
-    } 
-}
+
 .footer__span{
  margin-bottom: 1rem;
  
@@ -70,8 +60,7 @@
     .footer__ul{
         flex-wrap: nowrap;
     }
-    .footer__li{
-        //width: auto;
+    .footer__li{      
         flex-grow: 1;
     }
 }
@@ -87,39 +76,24 @@
         flex: 1;
         justify-self: baseline;
     }
+    .link{
+        &::before{
+            font-size: 2rem;
+            margin-right: .6rem;           
+        } 
+    }
    
 }
 @media (min-width:62rem){
     .footer__container{
         width: 80%;
-    }    
+    }  
+    .link{
+        &::before{
+            font-size: 2.5rem;
+            margin-right: .7rem;           
+        } 
+    }  
    
 }
-@media (min-width:86rem){
-    .footer__li{
-        &::before{            
-            width: 48px;
-            height: 48px;           
-            background: url("../images/sprite/icons-48px.png");
-            background-position: 0 0;
-        }
-    }
-    .footer__li--2{
-        &::before{                
-           
-            background-position: 0 -49px;
-        }
-    }
-    .footer__li--3{
-        &::before{                
-           
-            background-position: 0 -98px;
-        }
-    }
-    .footer__li--4{
-        &::before{                           
-            background-position: 0 -147px;
-        }
-    }
-    
-}
+
